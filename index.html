@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Friend Recommendation System</h1>
+        <label for="userInput">Enter User Name:</label>
+        <input type="text" id="userInput" placeholder="Enter user name">
+        <button onclick="getRecommendations()">Get Friend Recommendations</button>
+
+        <div id="recommendations">
+            <h3>Friend Suggestions:</h3>
+            <ul id="friendSuggestions"></ul>
+        </div>
+    </div>
+
+    <script src="graph.js"></script>
+    <script src="recommendation.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
